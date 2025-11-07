@@ -9,12 +9,12 @@ It integrates a conversational AI (OpenAI + DeepSeek fallback), PostgreSQL vecto
 
 ### 1️⃣ Clone the repo
 ```bash
-git clone https://github.com/<your-username>/partselect-assistant.git
+git clone https://github.com/JoyZhu219/PartSelect-LLM.git
 cd partselect-assistant
 ```
 
 ### 2️⃣ Setup environment
-Create `.env` files for both `backend/` and `frontend/`:
+Create `.env` files for both `backend/`:
 
 **backend/.env**
 ```
@@ -23,12 +23,6 @@ REDIS_URL=redis://localhost:6379
 OPENAI_API_KEY=sk-your-key
 PORT=3001
 ```
-
-**frontend/.env**
-```
-REACT_APP_API_URL=http://localhost:3001/api
-```
-
 ---
 
 ### 3️⃣ Start backend
@@ -89,7 +83,3 @@ App runs on [http://localhost:3000](http://localhost:3000)
 - Instalily Case Study for **PartSelect** AI integration
 
 ---
-
-## 📜 License
-
-MIT © 2025 Instalily Case Study

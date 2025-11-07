@@ -1,70 +1,103 @@
-# Getting Started with Create React App
+# 💬 Instalily Case Study – PartSelect Chat Assistant (Frontend)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is the **React-based frontend** for the PartSelect Chat Assistant.  
+It provides a conversational UI that communicates with the Node.js backend, displays interactive responses, renders product cards, and supports dynamic user prompts.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Quick Start
 
-### `npm start`
+### 1️⃣ Navigate to frontend folder
+```bash
+cd frontend
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 2️⃣ Install dependencies
+```bash
+npm install
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 3️⃣  Start the development server
+```bash
+npm start
+```
 
-### `npm test`
+Frontend runs on **[http://localhost:3000](http://localhost:3000)**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🧩 Core Components
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+| File | Description |
+|------|--------------|
+| `App.js` | Main application entry point and header layout |
+| `components/ChatWindow.js` | Core chat UI component with messages and input |
+| `components/ActionButtons.js` | Renders interactive suggestions and input prompts |
+| `components/ProductCard.js` | Displays product details (image, rating, compatibility) |
+| `api.js` | Handles communication with backend endpoints |
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🧠 Features
 
-### `npm run eject`
+- ✨ Interactive chat with typing indicator  
+- 🧩 Dynamic action buttons and prompts  
+- 📦 Product card grid with “Add to Cart” buttons  
+- 🧠 Context-aware chat session using `sessionId`  
+- 🧭 Markdown rendering with `marked`  
+- 🪄 Smooth animations with `Framer Motion`  
+- 💡 Local `userId` persistence via `localStorage`  
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📡 API Calls
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The frontend communicates with the backend using `frontend/src/api.js`:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+| Function | Description |
+|-----------|--------------|
+| `getAIMessage()` | Sends user query to backend `/api/chat` |
+| `searchProducts()` | Direct search for parts |
+| `checkCompatibility()` | Verifies part ↔ model |
+| `healthCheck()` | Confirms backend availability |
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🧱 Folder Structure
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+frontend/
+├── src/
+│   ├── App.js / App.css
+│   ├── components/
+│   │   ├── ChatWindow.js / ChatWindow.css
+│   │   ├── ProductCard.js / ProductCard.css
+│   │   ├── ActionButtons.js / ActionButtons.css
+│   └── api.js
+├── public/
+└── package.json
+```
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🧠 Example Flow
 
-### Analyzing the Bundle Size
+1. User opens chat → greeted by assistant  
+2. User sends “Find parts for my model”  
+3. Backend asks for model number → `ActionButtons` shows input  
+4. User enters “WDT780SAEM1” → backend returns matching products  
+5. UI displays `ProductCard` results dynamically  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## 🧰 Tech Stack
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+| Layer | Tool |
+|-------|------|
+| Framework | React 18 |
+| Styling | CSS Modules |
+| Markdown | Marked |
+| Animations | Framer Motion |
+| Testing | Jest + React Testing Library |
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
