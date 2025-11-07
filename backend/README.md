@@ -1,4 +1,4 @@
-# 🧠 Instalily Case Study – PartSelect Chat Assistant (Backend)
+# Instalily Case Study – PartSelect Chat Assistant (Backend)
 
 This is the **Node.js + Express backend** for the PartSelect Chat Assistant.  
 It handles AI orchestration (OpenAI + DeepSeek), PostgreSQL product database queries, Redis memory context, telemetry, and API endpoints used by the React frontend.

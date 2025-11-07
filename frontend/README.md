@@ -1,4 +1,4 @@
-# 💬 Instalily Case Study – PartSelect Chat Assistant (Frontend)
+# Instalily Case Study – PartSelect Chat Assistant (Frontend)
 
 This is the **React-based frontend** for the PartSelect Chat Assistant.  
 It provides a conversational UI that communicates with the Node.js backend, displays interactive responses, renders product cards, and supports dynamic user prompts.
@@ -26,7 +26,7 @@ Frontend runs on **[http://localhost:3000](http://localhost:3000)**
 
 ---
 
-## 🧩 Core Components
+## Core Components
 
 | File | Description |
 |------|--------------|
@@ -40,13 +40,13 @@ Frontend runs on **[http://localhost:3000](http://localhost:3000)**
 
 ## Features
 
-- ✨ Interactive chat with typing indicator  
-- 🧩 Dynamic action buttons and prompts  
-- 📦 Product card grid with “Add to Cart” buttons  
-- 🧠 Context-aware chat session using `sessionId`  
-- 🧭 Markdown rendering with `marked`  
-- 🪄 Smooth animations with `Framer Motion`  
-- 💡 Local `userId` persistence via `localStorage`  
+- Interactive chat with typing indicator  
+- Dynamic action buttons and prompts  
+- Product card grid with “Add to Cart” buttons  
+- Context-aware chat session using `sessionId`  
+- Markdown rendering with `marked`  
+- Smooth animations with `Framer Motion`  
+- Local `userId` persistence via `localStorage`  
 
 ---
 
