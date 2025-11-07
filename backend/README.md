@@ -5,19 +5,19 @@ It handles AI orchestration (OpenAI + DeepSeek), PostgreSQL product database que
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
-### 1️⃣ Navigate to backend folder
+### Navigate to backend folder
 ```bash
 cd backend
 ```
 
-### 2️⃣ Install dependencies
+### Install dependencies
 ```bash
 npm install
 ```
 
-### 3️⃣ Create `.env` file
+### Create `.env` file
 Create a `.env` file inside the `backend` directory:
 
 ```bash
@@ -28,7 +28,7 @@ DEEPSEEK_API_KEY=sk-your-deepseek-key
 PORT=3001
 ```
 
-### 4️⃣ Setup database
+### Setup database
 Run PostgreSQL and create your database:
 ```bash
 createdb partselect
@@ -36,7 +36,7 @@ psql partselect < schema.sql
 psql partselect < seed.sql
 ```
 
-### 5️⃣ Start the server
+### Start the server
 ```bash
 npm run dev
 ```
@@ -45,7 +45,7 @@ Backend runs on **[http://localhost:3001](http://localhost:3001)**
 
 ---
 
-## 📡 API Endpoints
+## API Endpoints
 
 | Method | Endpoint | Description |
 |---------|-----------|-------------|
@@ -56,7 +56,7 @@ Backend runs on **[http://localhost:3001](http://localhost:3001)**
 
 ---
 
-## 🧩 Core Components
+## Core Components
 
 | File | Description |
 |------|--------------|
@@ -69,7 +69,7 @@ Backend runs on **[http://localhost:3001](http://localhost:3001)**
 
 ---
 
-## 🧠 Architecture
+## Architecture
 
 ```
 User Query → /api/chat → AgentOrchestrator
@@ -85,7 +85,7 @@ AI Response → JSON with text, products, and actions
 
 ---
 
-## 🗃️ Database Structure
+## Database Structure
 
 - **parts** – stores product info & vector embeddings  
 - **part_compatibility** – links parts to appliance models  
@@ -94,7 +94,7 @@ AI Response → JSON with text, products, and actions
 
 ---
 
-## 🧰 Tech Stack
+## Tech Stack
 
 | Component | Technology |
 |------------|-------------|
@@ -107,7 +107,7 @@ AI Response → JSON with text, products, and actions
 
 ---
 
-## 🧠 Example `.env.example`
+## Example `.env.example`
 
 ```bash
 DATABASE_URL=postgresql://postgres:password@localhost:5432/partselect

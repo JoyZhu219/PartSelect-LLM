@@ -5,19 +5,19 @@ It provides a conversational UI that communicates with the Node.js backend, disp
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
-### 1️⃣ Navigate to frontend folder
+### Navigate to frontend folder
 ```bash
 cd frontend
 ```
 
-### 2️⃣ Install dependencies
+### Install dependencies
 ```bash
 npm install
 ```
 
-### 3️⃣  Start the development server
+### Start the development server
 ```bash
 npm start
 ```
@@ -38,7 +38,7 @@ Frontend runs on **[http://localhost:3000](http://localhost:3000)**
 
 ---
 
-## 🧠 Features
+## Features
 
 - ✨ Interactive chat with typing indicator  
 - 🧩 Dynamic action buttons and prompts  
@@ -50,7 +50,7 @@ Frontend runs on **[http://localhost:3000](http://localhost:3000)**
 
 ---
 
-## 📡 API Calls
+## API Calls
 
 The frontend communicates with the backend using `frontend/src/api.js`:
 
@@ -63,7 +63,7 @@ The frontend communicates with the backend using `frontend/src/api.js`:
 
 ---
 
-## 🧱 Folder Structure
+## Folder Structure
 
 ```
 frontend/
@@ -80,7 +80,7 @@ frontend/
 
 ---
 
-## 🧠 Example Flow
+## Example Flow
 
 1. User opens chat → greeted by assistant  
 2. User sends “Find parts for my model”  
@@ -90,7 +90,7 @@ frontend/
 
 ---
 
-## 🧰 Tech Stack
+## Tech Stack
 
 | Layer | Tool |
 |-------|------|

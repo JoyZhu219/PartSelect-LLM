@@ -5,15 +5,15 @@ It integrates a conversational AI (OpenAI + DeepSeek fallback), PostgreSQL vecto
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
-### 1️⃣ Clone the repo
+### Clone the repo
 ```bash
 git clone https://github.com/JoyZhu219/PartSelect-LLM.git
 cd partselect-assistant
 ```
 
-### 2️⃣ Setup environment
+### Setup environment
 Create `.env` files for both `backend/`:
 
 **backend/.env**
@@ -25,7 +25,7 @@ PORT=3001
 ```
 ---
 
-### 3️⃣ Start backend
+### Start backend
 ```bash
 cd backend
 npm install
@@ -33,7 +33,7 @@ npm run dev
 ```
 Server runs on [http://localhost:3001](http://localhost:3001)
 
-### 4️⃣ Start frontend
+### Start frontend
 ```bash
 cd frontend
 npm install
@@ -43,18 +43,18 @@ App runs on [http://localhost:3000](http://localhost:3000)
 
 ---
 
-## 💡 Features
+## Features
 
-- 💬 Conversational AI assistant powered by OpenAI + DeepSeek
-- 🔧 Multi-agent orchestration (intent, product, compatibility, troubleshooting, installation, order support)
-- ⚙️ Context-aware Redis memory for continuity
-- 📦 PostgreSQL product + vector search with embeddings
-- 🧭 OpenTelemetry + Prometheus metrics
-- 🪄 Modern React UI with live chat, product cards, and actionable prompts
+- Conversational AI assistant powered by OpenAI + DeepSeek
+- Multi-agent orchestration (intent, product, compatibility, troubleshooting, installation, order support)
+- Context-aware Redis memory for continuity
+- PostgreSQL product + vector search with embeddings
+- OpenTelemetry + Prometheus metrics
+- Modern React UI with live chat, product cards, and actionable prompts
 
 ---
 
-## 🧠 Demo Use Cases
+## Demo Use Cases
 
 | Query | What happens |
 |-------|---------------|
@@ -65,7 +65,7 @@ App runs on [http://localhost:3000](http://localhost:3000)
 
 ---
 
-## 🧰 Tech Stack
+## Tech Stack
 
 | Layer | Tools |
 |--------|--------|
@@ -77,7 +77,21 @@ App runs on [http://localhost:3000](http://localhost:3000)
 
 ---
 
-## 👩‍💻 Contributors
+## System Design Overview
+
+The system follows a modular, microservice-inspired architecture:
+
+- **Frontend (React)** handles user interaction, chat streaming, and product rendering.  
+- **Backend (Express + Node.js)** orchestrates multiple AI agents (intent, product search, troubleshooting) and manages context through Redis.
+- **Database Layer (PostgreSQL)** stores structured product, compatibility, and conversation data.
+- **AI Layer (OpenAI + DeepSeek)** powers dynamic reasoning, with a fallback mechanism for cost efficiency.
+- **Telemetry Layer (OpenTelemetry + Prometheus)** provides distributed tracing and performance metrics.
+
+This design enables real-time, conversational part discovery with a resilient, observable backend.
+
+---
+
+## Contributors
 
 - **Joy (Yizhi) Zhu** — Full-Stack Developer  
 - Instalily Case Study for **PartSelect** AI integration
