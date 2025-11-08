@@ -91,6 +91,13 @@ This design enables real-time, conversational part discovery with a resilient, o
 
 ---
 
+## Additional Resources
+
+- **Architecture Documentation:** [Google Docs](https://docs.google.com/document/d/1_aX7ya8aCDuDmX8Rk30Xm6rkYZq1KmEoGTrjiPROnZk/edit?usp=sharing)  
+- **Presentation Slides:** [Canva Link](https://www.canva.com/design/DAG4DSqHGCk/SEC6U9HXFIwtkCQVF8fp0Q/edit?utm_content=DAG4DSqHGCk&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+
+---
+
 ## Contributors
 
 - **Joy (Yizhi) Zhu** — Full-Stack Developer  
