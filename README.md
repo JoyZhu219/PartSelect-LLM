@@ -10,7 +10,7 @@ It integrates a conversational AI (OpenAI + DeepSeek fallback), PostgreSQL vecto
 ### Clone the repo
 ```bash
 git clone https://github.com/JoyZhu219/PartSelect-LLM.git
-cd partselect-assistant
+cd instalily-case-study
 ```
 
 ### Setup environment
